@@ -8,7 +8,10 @@ layout = [
     ],
 
     [
-        sg.Text("Output:", key="-OUTDISPLAY-"), sg.Text(" ", enable_events= True, key="-OUTPUT-")
+        sg.Column(
+            [[sg.Text("Output:", key="-OUTDISPLAY-"), 
+            sg.Text(" ", enable_events= True, key="-OUTPUT-")]],
+        justification='center')
     ]
 ]
 
