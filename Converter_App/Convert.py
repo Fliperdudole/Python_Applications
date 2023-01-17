@@ -8,7 +8,7 @@ layout = [
     ],
 
     [
-        sg.Text("Output:"), sg.Text(" ", enable_events= True, key="-OUTPUT-")
+        sg.Text("Output:", key="-OUTDISPLAY-"), sg.Text(" ", enable_events= True, key="-OUTPUT-")
     ]
 ]
 
@@ -44,6 +44,7 @@ while True:
 
         
         else:
+            window[]
             window['-OUTPUT-'].update("Please enter a number!")
 
         
