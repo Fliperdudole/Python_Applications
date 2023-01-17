@@ -21,12 +21,15 @@ while True:
         break
 
     if event == "-CONVERT-":
-        
+
         input_value = values['-INPUT-']
         
         if input_value.isnumeric():
 
+            window["-OUTDISPLAY-"].update(visible=False)
+            window["-OUTPUT-"].update(visible=False)
             window["-OUTDISPLAY-"].update(visible=True)
+            window["-OUTPUT-"].update(visible=True)
 
             match values['-UNITS-']:
 
@@ -54,6 +57,8 @@ while True:
         else:
             window["-OUTDISPLAY-"].update(visible=False)
             window['-OUTPUT-'].update("Please enter a number!")
+            
+            
 
         
     
