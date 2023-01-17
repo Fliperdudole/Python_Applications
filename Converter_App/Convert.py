@@ -44,7 +44,7 @@ while True:
 
         
         else:
-            print("Enter a number!")
+            window['-OUTPUT-'].update("Please enter a number!")
 
         
     
