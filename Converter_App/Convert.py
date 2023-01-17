@@ -1,3 +1,11 @@
+"""
+Name: Brandon Sandoval
+Description: Using the PySimpleGui, I've created a simple converter that takes a user's input and outputs the chosen conversion.
+
+
+"""
+
+
 import PySimpleGUI as sg
 
 layout = [
@@ -29,8 +37,11 @@ while True:
         
         if input_value.isnumeric():
 
+            #This is used to refresh the output after the case that a user inputs a non-number, 
+            # if removed "Output:" will appear on the right of the unit output
+            
             window["-OUTDISPLAY-"].update(visible=False)
-            window["-OUTPUT-"].update(visible=False)
+            window["-OUTPUT-"].update(visible=False)    
             window["-OUTDISPLAY-"].update(visible=True)
             window["-OUTPUT-"].update(visible=True)
 
