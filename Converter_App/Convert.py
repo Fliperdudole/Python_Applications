@@ -15,7 +15,7 @@ while True:
         break
 
     if event == "Convert":
-        print("Test")
+        window['-OUTPUT-'].update(values['-INPUT-'])
     
 
 
